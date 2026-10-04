@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Prepare reminder for Mary Johnson | NordWest LMS</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="shell">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <div class="brand">NordWest University</div>
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Dashboard</a>
+                    <a class="nav-link active" href="meet-students.html">meetMyStudent</a>
+                    <a class="nav-link" href="teach-courses.html">teachMyStudent</a>
+                    <a class="nav-link" href="test-examinations.html">testMyStudent</a>
+                    <a class="nav-link" href="grade-submissions.html">gradeMyStudent</a>
+                </nav>
+                <div class="bottom-nav">
+                    <button class="action-button unavailable">Open<br>Student Portal</button>
+                    <button class="action-button unavailable">Logout</button>
+                    <button class="support-button unavailable">SUPPORT</button>
+                </div>
+            </aside>
+            <main class="main">
+                <!-- requires attention -->
+                <button class="bookmark-button"></button>
+                <aside class="attention-panel" hidden>
+                    <h2>Requires attention</h2>
+                    <div class="attention-item">
+                        <strong>Prepare deadline reminder</strong>
+                        <span>Isabella Carter · Python Introduction</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Prepare examination registration reminder</strong>
+                        <span>Michael Smith · Computer Science</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Prepare follow-up reminder</strong>
+                        <span>Mary Johnson · Python Introduction</span>
+                        <span>Task deadline · Examination registration</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Review unpublished Midterm Exam result</strong>
+                        <span>Isabella Carter · Python Introduction</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Review unpublished Midterm Exam result</strong>
+                        <span>James Brown · Python Introduction</span>
+                    </div>
+                </aside>
+                <!-- page content -->
+                <div class="main-content">
+                    <header class="page-header">
+                        <a class="back-link" href="meet-students.html">←</a>
+                        <h1 class="page-title">meetMyStudent</h1>
+                    </header>
+                    <form>
+                        <h2 class="detail-title reminder-title">Prepare reminder</h2>
+                        <div class="reminder-top">
+                            <section class="reminder-box">
+                                <h3>Recipient</h3>
+                                <div class="inner-card recipient">
+                                    <p>Student: <strong>Mary Johnson</strong></p>
+                                    <p>Student ID: <strong>4590</strong></p>
+                                </div>
+                            </section>
+                            <section class="reminder-box">
+                                <h3>Reminder topic</h3>
+                                <div class="inner-card checks">
+                                    <label>
+                                        <input class="task-checkbox" type="checkbox">
+                                        <span>Task deadline</span>
+                                    </label>
+                                    <label>
+                                        <input class="registration-checkbox" type="checkbox">
+                                        <span>Examination registration</span>
+                                    </label>
+                                </div>
+                            </section>
+                        </div>
+                        <section class="reminder-message">
+                            <h3>Reminder message</h3>
+                            <label class="form-field">
+                                Topic
+                                <input class="reminder-topic" readonly value="">
+                            </label>
+                            <label class="form-field">
+                                Message
+                                <textarea></textarea>
+                            </label>
+                        </section>
+                        <div class="form-actions">
+                            <a class="outline-button" href="meet-ai-assistant.html">Cancel</a>
+                            <button class="action-button unavailable" type="button">Send reminder</button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <script src="js/common.js"></script>
+        <script src="js/reminder.js"></script>
+    </body>
+</html>

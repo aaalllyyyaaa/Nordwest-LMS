@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Courses | NordWest LMS</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="shell">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <div class="brand">NordWest University</div>
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Dashboard</a>
+                    <a class="nav-link" href="meet-students.html">meetMyStudent</a>
+                    <a class="nav-link active" href="teach-courses.html">teachMyStudent</a>
+                    <a class="nav-link" href="test-examinations.html">testMyStudent</a>
+                    <a class="nav-link" href="grade-submissions.html">gradeMyStudent</a>
+                </nav>
+                <div class="bottom-nav">
+                    <button class="action-button unavailable">Open<br>Student Portal</button>
+                    <button class="action-button unavailable">Logout</button>
+                    <button class="support-button unavailable">SUPPORT</button>
+                </div>
+            </aside>
+            <main class="main">
+                <!-- requires attention -->
+                <button class="bookmark-button"></button>
+                <aside class="attention-panel" hidden>
+                    <h2>Requires attention</h2>
+                    <div class="attention-item">
+                        <strong>Prepare deadline reminder</strong>
+                        <span>Isabella Carter · Python Introduction</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Prepare examination registration reminder</strong>
+                        <span>Michael Smith · Computer Science</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Prepare follow-up reminder</strong>
+                        <span>Mary Johnson · Python Introduction</span>
+                        <span>Task deadline · Examination registration</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Review unpublished Midterm Exam result</strong>
+                        <span>Isabella Carter · Python Introduction</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Review unpublished Midterm Exam result</strong>
+                        <span>James Brown · Python Introduction</span>
+                    </div>
+                </aside>
+                <!-- page content -->
+                <div class="main-content">
+                    <header class="page-header">
+                        <h1 class="page-title">teachMyStudent</h1>
+                    </header>
+                    <section class="teach-landing">
+                        <h2 class="section-title">Courses</h2>
+                        <div class="course-list">
+                            <a class="wide-course-card" href="course-computer-science.html">
+                                <h3>Computer Science</h3>
+                                <div class="course-icon">
+                                    <img alt="" src="assets/book.svg">
+                                </div>
+                                <p>Explore the core concepts of computer science, including algorithms, data structures, computer architecture, and problem-solving. Understand the principles behind modern software and computing systems.</p>
+                            </a>
+                            <a class="wide-course-card" href="course-python.html">
+                                <h3>Python Introduction</h3>
+                                <div class="course-icon">
+                                    <img alt="" src="assets/python.svg">
+                                </div>
+                                <p>Discover the basics of Python programming, from variables and control flow to functions and data structures. Gain practical skills through simple coding exercises and projects.</p>
+                            </a>
+                            <a class="wide-course-card" href="course-golang.html">
+                                <h3>Golang Introduction</h3>
+                                <div class="course-icon">
+                                    <img alt="" src="assets/go.svg">
+                                </div>
+                                <p>Learn the fundamentals of Go, including syntax, data structures, functions, interfaces, and concurrency. Build a solid foundation for developing efficient and reliable applications.</p>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <script src="js/common.js"></script>
+    </body>
+</html>

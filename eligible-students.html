@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Eligible students | NordWest LMS</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="shell">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <div class="brand">NordWest University</div>
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Dashboard</a>
+                    <a class="nav-link" href="meet-students.html">meetMyStudent</a>
+                    <a class="nav-link" href="teach-courses.html">teachMyStudent</a>
+                    <a class="nav-link active" href="test-examinations.html">testMyStudent</a>
+                    <a class="nav-link" href="grade-submissions.html">gradeMyStudent</a>
+                </nav>
+                <div class="bottom-nav">
+                    <button class="action-button unavailable">Open<br>Student Portal</button>
+                    <button class="action-button unavailable">Logout</button>
+                    <button class="support-button unavailable">SUPPORT</button>
+                </div>
+            </aside>
+            <main class="main">
+                <!-- requires attention -->
+                <button class="bookmark-button"></button>
+                <aside class="attention-panel" hidden>
+                    <h2>Requires attention</h2>
+                    <div class="attention-item">
+                        <strong>Prepare deadline reminder</strong>
+                        <span>Isabella Carter · Python Introduction</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Prepare examination registration reminder</strong>
+                        <span>Michael Smith · Computer Science</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Prepare follow-up reminder</strong>
+                        <span>Mary Johnson · Python Introduction</span>
+                        <span>Task deadline · Examination registration</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Review unpublished Midterm Exam result</strong>
+                        <span>Isabella Carter · Python Introduction</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Review unpublished Midterm Exam result</strong>
+                        <span>James Brown · Python Introduction</span>
+                    </div>
+                </aside>
+                <!-- page content -->
+                <div class="main-content">
+                    <header class="page-header">
+                        <h1 class="page-title">testMyStudent</h1>
+                    </header>
+                    <nav class="tabs test-tabs">
+                        <a class="tab-link" href="test-examinations.html">Examinations</a>
+                        <a class="tab-link active" href="eligible-students.html">Eligible students</a>
+                    </nav>
+                    <section class="filter-bar eligible-filters">
+                        <select>
+                            <option disabled selected value="">Course</option>
+                            <option>Python Introduction</option>
+                            <option>Computer Science</option>
+                            <option>Golang Introduction</option>
+                        </select>
+                        <input placeholder="Semester">
+                        <input placeholder="Student ID">
+                        <input placeholder="Attempts">
+                        <button class="action-button unavailable">Search</button>
+                    </section>
+                    <section class="table-card eligible-card">
+                        <h2>Student overview</h2>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Student</th>
+                                    <th>Examination<br>registration</th>
+                                    <th>Course</th>
+                                    <th>Semester</th>
+                                    <th>Remaining<br>attempts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Isabella Carter</strong><br>1234</td>
+                                    <td>Registered</td>
+                                    <td>Python Introduction</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Michael Smith</strong><br>7845</td>
+                                    <td>Not registered</td>
+                                    <td>Computer Science</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Mary Johnson</strong><br>4590</td>
+                                    <td>Not registered</td>
+                                    <td>Python Introduction</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>James Brown</strong><br>2313</td>
+                                    <td>Registered</td>
+                                    <td>Python Introduction</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>John Williams</strong><br>6081</td>
+                                    <td>Registered</td>
+                                    <td>Golang Introduction</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pagination">
+                            <span>‹</span>
+                            <strong>1</strong>
+                            <span>›</span>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <script src="js/common.js"></script>
+    </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Students | NordWest LMS</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="shell">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <div class="brand">NordWest University</div>
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Dashboard</a>
+                    <a class="nav-link active" href="meet-students.html">meetMyStudent</a>
+                    <a class="nav-link" href="teach-courses.html">teachMyStudent</a>
+                    <a class="nav-link" href="test-examinations.html">testMyStudent</a>
+                    <a class="nav-link" href="grade-submissions.html">gradeMyStudent</a>
+                </nav>
+                <div class="bottom-nav">
+                    <button class="action-button unavailable">Open<br>Student Portal</button>
+                    <button class="action-button unavailable">Logout</button>
+                    <button class="support-button unavailable">SUPPORT</button>
+                </div>
+            </aside>
+            <main class="main">
+                <!-- requires attention -->
+                <button class="bookmark-button"></button>
+                <aside class="attention-panel" hidden>
+                    <h2>Requires attention</h2>
+                    <div class="attention-item">
+                        <strong>Prepare deadline reminder</strong>
+                        <span>Isabella Carter · Python Introduction</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Prepare examination registration reminder</strong>
+                        <span>Michael Smith · Computer Science</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Prepare follow-up reminder</strong>
+                        <span>Mary Johnson · Python Introduction</span>
+                        <span>Task deadline · Examination registration</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Review unpublished Midterm Exam result</strong>
+                        <span>Isabella Carter · Python Introduction</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Review unpublished Midterm Exam result</strong>
+                        <span>James Brown · Python Introduction</span>
+                    </div>
+                </aside>
+                <!-- page content -->
+                <div class="main-content">
+                    <header class="page-header">
+                        <h1 class="page-title">meetMyStudent</h1>
+                    </header>
+                    <nav class="tabs">
+                        <a class="tab-link active" href="meet-students.html">Students</a>
+                        <a class="tab-link" href="meet-ai-assistant.html">AI assistant</a>
+                    </nav>
+                    <section class="filter-bar">
+                        <select>
+                            <option disabled selected value="">Search by</option>
+                            <option>Student name</option>
+                            <option>Student ID</option>
+                            <option>Course</option>
+                            <option>Semester</option>
+                        </select>
+                        <input placeholder="Enter value">
+                        <button class="action-button unavailable">Search</button>
+                    </section>
+                    <div class="student-layout">
+                        <section class="table-card">
+                            <h2>Student overview</h2>
+                            <table class="data-table">
+                                <colgroup>
+                                    <col>
+                                    <col>
+                                    <col style="width:31%">
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>Student</th>
+                                        <th>Student ID</th>
+                                        <th>Course</th>
+                                        <th>Semester</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="clickable-row selected student-row">
+                                        <td>Isabella<br>Carter</td>
+                                        <td>1234</td>
+                                        <td>Python<br>Introduction</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr class="clickable-row student-row">
+                                        <td>Michael<br>Smith</td>
+                                        <td>7845</td>
+                                        <td>Computer<br>Science</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr class="clickable-row student-row">
+                                        <td>Mary<br>Johnson</td>
+                                        <td>4590</td>
+                                        <td>Python<br>Introduction</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr class="clickable-row student-row">
+                                        <td>James<br>Brown</td>
+                                        <td>2313</td>
+                                        <td>Python<br>Introduction</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr class="clickable-row student-row">
+                                        <td>John<br>Williams</td>
+                                        <td>6081</td>
+                                        <td>Golang<br>Introduction</td>
+                                        <td>3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination">
+                                <span>‹</span>
+                                <strong>1</strong>
+                                <span>›</span>
+                            </div>
+                        </section>
+                        <aside class="student-card">
+                            <section class="student-details">
+                                <h2>Isabella Carter</h2>
+                                <dl>
+                                    <dt>Student ID:</dt>
+                                    <dd>1234</dd>
+                                    <dt>Course:</dt>
+                                    <dd>Python Introduction</dd>
+                                    <dt>Semester:</dt>
+                                    <dd>2</dd>
+                                    <dt>Examination<br>attempt(s):</dt>
+                                    <dd>2 left</dd>
+                                    <dt>Project<br>assigned:</dt>
+                                    <dd>Yes</dd>
+                                </dl>
+                                <hr>
+                                <a class="action-button wide-button" href="reminder-isabella.html">Prepare reminder</a>
+                            </section>
+                            <section class="student-details" hidden>
+                                <h2>Michael Smith</h2>
+                                <dl>
+                                    <dt>Student ID:</dt>
+                                    <dd>7845</dd>
+                                    <dt>Course:</dt>
+                                    <dd>Computer Science</dd>
+                                    <dt>Semester:</dt>
+                                    <dd>3</dd>
+                                    <dt>Examination<br>attempt(s):</dt>
+                                    <dd>1 left</dd>
+                                    <dt>Project<br>assigned:</dt>
+                                    <dd>No</dd>
+                                </dl>
+                                <hr>
+                                <a class="action-button wide-button" href="reminder-michael.html">Prepare reminder</a>
+                            </section>
+                            <section class="student-details" hidden>
+                                <h2>Mary Johnson</h2>
+                                <dl>
+                                    <dt>Student ID:</dt>
+                                    <dd>4590</dd>
+                                    <dt>Course:</dt>
+                                    <dd>Python Introduction</dd>
+                                    <dt>Semester:</dt>
+                                    <dd>2</dd>
+                                    <dt>Examination<br>attempt(s):</dt>
+                                    <dd>2 left</dd>
+                                    <dt>Project<br>assigned:</dt>
+                                    <dd>Yes</dd>
+                                </dl>
+                                <hr>
+                                <a class="action-button wide-button" href="reminder-mary.html">Prepare reminder</a>
+                            </section>
+                            <section class="student-details" hidden>
+                                <h2>James Brown</h2>
+                                <dl>
+                                    <dt>Student ID:</dt>
+                                    <dd>2313</dd>
+                                    <dt>Course:</dt>
+                                    <dd>Python Introduction</dd>
+                                    <dt>Semester:</dt>
+                                    <dd>1</dd>
+                                    <dt>Examination<br>attempt(s):</dt>
+                                    <dd>2 left</dd>
+                                    <dt>Project<br>assigned:</dt>
+                                    <dd>No</dd>
+                                </dl>
+                                <hr>
+                                <a class="action-button wide-button" href="reminder-james.html">Prepare reminder</a>
+                            </section>
+                            <section class="student-details" hidden>
+                                <h2>John Williams</h2>
+                                <dl>
+                                    <dt>Student ID:</dt>
+                                    <dd>6081</dd>
+                                    <dt>Course:</dt>
+                                    <dd>Golang Introduction</dd>
+                                    <dt>Semester:</dt>
+                                    <dd>3</dd>
+                                    <dt>Examination<br>attempt(s):</dt>
+                                    <dd>2 left</dd>
+                                    <dt>Project<br>assigned:</dt>
+                                    <dd>No</dd>
+                                </dl>
+                                <hr>
+                                <a class="action-button wide-button" href="reminder-john.html">Prepare reminder</a>
+                            </section>
+                        </aside>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="js/common.js"></script>
+        <script src="js/students.js"></script>
+    </body>
+</html>

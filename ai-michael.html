@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>AI review Michael | NordWest LMS</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="shell">
+            <!-- sidebar -->
+            <aside class="sidebar">
+                <div class="brand">NordWest University</div>
+                <nav class="nav">
+                    <a class="nav-link" href="index.html">Dashboard</a>
+                    <a class="nav-link active" href="meet-students.html">meetMyStudent</a>
+                    <a class="nav-link" href="teach-courses.html">teachMyStudent</a>
+                    <a class="nav-link" href="test-examinations.html">testMyStudent</a>
+                    <a class="nav-link" href="grade-submissions.html">gradeMyStudent</a>
+                </nav>
+                <div class="bottom-nav">
+                    <button class="action-button unavailable">Open<br>Student Portal</button>
+                    <button class="action-button unavailable">Logout</button>
+                    <button class="support-button unavailable">SUPPORT</button>
+                </div>
+            </aside>
+            <main class="main">
+                <!-- requires attention -->
+                <button class="bookmark-button"></button>
+                <aside class="attention-panel" hidden>
+                    <h2>Requires attention</h2>
+                    <div class="attention-item">
+                        <strong>Prepare deadline reminder</strong>
+                        <span>Isabella Carter · Python Introduction</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Prepare examination registration reminder</strong>
+                        <span>Michael Smith · Computer Science</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Prepare follow-up reminder</strong>
+                        <span>Mary Johnson · Python Introduction</span>
+                        <span>Task deadline · Examination registration</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Review unpublished Midterm Exam result</strong>
+                        <span>Isabella Carter · Python Introduction</span>
+                    </div>
+                    <div class="attention-item">
+                        <strong>Review unpublished Midterm Exam result</strong>
+                        <span>James Brown · Python Introduction</span>
+                    </div>
+                </aside>
+                <!-- page content -->
+                <div class="main-content">
+                    <header class="page-header">
+                        <a class="back-link" href="meet-ai-assistant.html">←</a>
+                        <h1 class="page-title">meetMyStudent</h1>
+                    </header>
+                    <section class="ai-review">
+                        <h2 class="detail-title">AI Lecturer Reminder Assistant</h2>
+                        <h3 class="detail-subtitle">Student follow-up review</h3>
+                        <div class="ai-detail-grid">
+                            <div class="ai-left">
+                                <article class="inner-card">
+                                    <h3>Follow-up details</h3>
+                                    <div>
+                                        <span>STUDENT</span>
+                                        <strong>Michael Smith</strong>
+                                    </div>
+                                    <div>
+                                        <span>COURSE</span>
+                                        <strong>Computer Science</strong>
+                                    </div>
+                                    <div>
+                                        <span>REGISTRATION</span>
+                                        <strong>Not registered</strong>
+                                    </div>
+                                </article>
+                                <article class="inner-card why-card">
+                                    <h3>Why follow-up may be needed</h3>
+                                    <p>Michael Smith is not registered for the Computer Science examination. A reminder may help the student complete registration before it closes.</p>
+                                </article>
+                            </div>
+                            <section class="draft-card">
+                                <h3>Reminder draft</h3>
+                                <div class="draft-message">
+                                    Dear Michael Smith,
+                                    <br>
+                                    <br>
+                                    This is a reminder that your examination registration is not yet complete. Please complete the registration before the deadline.
+                                    <br>
+                                    <br>
+                                    Kind regards,
+                                    <br>
+                                    Lecturer
+                                </div>
+                                <a class="action-button continue-button" href="reminder-ai-michael.html">Continue with draft</a>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <script src="js/common.js"></script>
+    </body>
+</html>
